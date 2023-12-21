@@ -12,7 +12,7 @@
     @extends('layout.app')
 
     @section('appContents')
-        <!-- Your articles-specific content goes here -->
+        <h2>This is in articles view</h2><br>
     @endsection
 
 </body>

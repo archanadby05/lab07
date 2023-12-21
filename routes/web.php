@@ -18,8 +18,8 @@ use Illuminate\Support\Facades\Route;
 // });
 
 
-// Define a route for the home page, pointing to the index method of HomeController
-Route::get('/', [HomeController::class, 'index']);
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ArticlesController;
 
-// Define a route for the articles page, pointing to the index method of ArticlesController
+Route::get('/', [HomeController::class, 'index']);
 Route::get('/articles', [ArticlesController::class, 'index']);
