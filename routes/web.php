@@ -13,6 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+
+// Define a route for the home page, pointing to the index method of HomeController
+Route::get('/', [HomeController::class, 'index']);
+
+// Define a route for the articles page, pointing to the index method of ArticlesController
+Route::get('/articles', [ArticlesController::class, 'index']);
